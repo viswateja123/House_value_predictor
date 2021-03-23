@@ -1,0 +1,68 @@
+<html>
+<body>
+<link rel="stylesheet" href="style1.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arial">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+ <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+ <link rel="shortcut icon" href="{{ url_for('static', filename='ipl-favicon.ico') }}">
+ <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style1.css') }}">
+ <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+<div class="header">
+<title>RealEstate Predictor</title>
+<p>Realestate predictor</p>
+</div>
+
+
+
+<div class="first">
+Made with python and deployed using Heroku <img src="hi.jpg" style= "width: 30px;
+  height: 30px; padding: 10px; top:30px;">
+</br><br></br></div>
+<br>
+<nav>
+	
+  <img class="image-width" src="{{ url_for('static', filename='mi.gif') }}" alt="Mumbai Indians">
+
+</nav>
+<!--buwwu-->
+ <div class="prediction-area">
+
+            <!-- IPL Banner - 1 -->
+            <div class='ipl-banner-left'>
+
+                <div class="slider-frame">
+                    <div class="slide-images-up">
+
+                        <!-- Image-1 -->
+                        
+                    </div>
+                </div>
+
+            </div>
+            <div class="div2">
+
+	<form action="{{ url_for('predict') }}" method="POST">
+
+	<input class="form-input" type="text" name="Old" placeholder="houseage"><br>
+                    <input class="form-input" type="text" name="Dist" placeholder="distance"><br>
+                    <input class="form-input" type="text" name="No" placeholder="roomnos"><br>
+                    <input class="form-input" type="text" name="Long" placeholder="longitude"><br>
+                    <input class="form-input" type="text" name="Lat" placeholder="latitude"><br>
+                </form>
+                
+                <input type="submit" class="myButton" value="Predict Score">	
+                
+</div>
+</div>
+<!-- old- -->
+</body>
+
+<div class='footer'>
+           <div class="contact">
+               <a target="_blank" href="https://github.com/anujvyas/IPL-First-Innings-Score-Prediction-Deployment"><i class="fab fa-github fa-lg contact-icon"></i></a>
+               <a target="_blank" href="https://www.linkedin.com/in/anujkvyas"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+           </div>
+           <p class='footer-description'>Made with ❤️ by Viswateja.</p>
+       </div>
+
+</html>

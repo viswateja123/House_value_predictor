@@ -1,0 +1,66 @@
+  
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Real estate Predictor</title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='icon.ico') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style1.css') }}">
+        
+        <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <div class="header">
+    <title>RealEstate Predictor</title>
+    <p>Realestate predictor</p>
+    </div>
+
+
+    <body>
+
+        <!-- Website Title -->
+    	<div class="first">
+    Made with python and deployed using flask <img src="hi.jpg" style= "width: 30px;
+  height: 30px; padding: 10px; top:30px;">
+</br><br></br></div>
+<br>
+<nav>
+    
+  <img class="image-width" src="{{ url_for('static', filename='mi.gif') }}" alt="Mumbai Indians">
+
+</nav>
+        <!-- Prediction Area -->
+        <div class="prediction-area">
+
+            <!-- IPL Banner - 1 -->
+            
+            </div>
+
+            <!-- Prediction Form -->
+            <div class='div2'>
+                <form action="{{ url_for('predict') }}" method="POST">
+                    <!-- Batting Team Dropdown -->
+                    <input class="form-input" type="text" name="Old" placeholder="Age of house"><br>
+                    <input class="form-input" type="text" name="Dist" placeholder="Distance"><br>
+                    <input class="form-input" type="text" name="No" placeholder="Number of rooms"><br>
+                    <input class="form-input" type="text" name="Long" placeholder="Latitude"><br>
+                    <input class="form-input" type="text" name="Lat" placeholder="Longitude"><br>
+
+			<input type="submit" class="myButton" value="Predict Score">
+        	</form>
+            </div>
+
+            <!-- IPL Banner - 2 -->
+            
+        <!-- Footer -->
+       <div class='footer'>
+           <div class="contact">
+               <a target="_blank" href="https://github.com"><i class="fab fa-github fa-lg contact-icon"></i></a>
+               <a target="_blank" href="https://www.linkedin.com"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+           </div>
+           <p class='footer-description'>Made with ❤️ by Viswateja.</p>
+       </div>
+
+    </body>
+</html>
